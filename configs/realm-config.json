@@ -1,0 +1,128 @@
+{
+  "realm": "mdigii",
+  "enabled": true,
+  "clients": [
+    {
+      "clientId": "mdigii-hub",
+      "name": "MDIGII Hub",
+      "publicClient": false,
+      "protocol": "openid-connect",
+      "secret": "sEPUqEnpGmmn8MkvwyB54A4hCgUsDC6B",
+      "redirectUris": [
+        "https://localhost:7294/*"
+      ],
+      "webOrigins": [
+        "https://localhost:7294"
+      ],
+      "attributes": {
+        "post.logout.redirect.uris": "https://localhost:7294/Account/LogoutComplete"
+      },
+      "standardFlowEnabled": true,
+      "fullScopeAllowed": true
+    },
+    {
+      "clientId": "certificate-service",
+      "name": "Cerfificate Service",
+      "publicClient": false,
+      "protocol": "openid-connect",
+      "secret": "cW8JDQPGv0q0Kdg33aQ8JD0s2XC4gdGf",
+      "redirectUris": [
+        "https://localhost:7067/*"
+      ],
+      "webOrigins": [
+        "https://localhost:7067"
+      ],
+      "attributes": {
+        "post.logout.redirect.uris": "https://localhost:7294/Account/LogoutComplete"
+      },
+      "standardFlowEnabled": true,
+      "fullScopeAllowed": false,
+      "defaultClientScopes": [
+        "openid",
+        "profile",
+        "email",
+        "web-origins"
+      ],
+      "optionalClientScopes": [
+        "address",
+        "phone",
+        "offline_access",
+        "microprofile-jwt"
+      ]
+    }
+  ],
+  "roles": {
+    "realm": [],
+    "client": {
+      "mdigii-hub": [
+        {
+          "name": "hub-admin"
+        },
+        {
+          "name": "hub-editor"
+        }
+      ],
+      "certificate-service": [
+        {
+          "name": "cert-admin"
+        },
+        {
+          "name": "cert-issuer"
+        }
+      ]
+    }
+  },
+  "users": [
+    {
+      "username": "cert-issuer-user",
+      "enabled": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "issuer123",
+          "temporary": false
+        }
+      ],
+      "clientRoles": {
+        "certificate-service": [
+          "hub-issuer"
+        ]
+      }
+    },
+    {
+      "username": "hub-editor-user",
+      "enabled": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "editor123",
+          "temporary": false
+        }
+      ],
+      "clientRoles": {
+        "mdigii-hub": [
+          "hub-editor"
+        ]
+      }
+    },
+    {
+      "username": "global-admin",
+      "enabled": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "admin123",
+          "temporary": false
+        }
+      ],
+      "clientRoles": {
+        "certificate-service": [
+          "cert-admin"
+        ],
+        "mdigii-hub": [
+          "hub-admin"
+        ]
+      }
+    }
+  ]
+}

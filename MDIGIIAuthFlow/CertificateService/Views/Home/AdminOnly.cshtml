@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Issuer Only";
+}
+
+<div class="container mt-4">
+    <h1>Admin Only Page</h1>
+    <div class="alert alert-info">
+        <p>This page is only accessible to users with the Admin role in the Certificate Service.</p>
+        <p><strong>Your roles:</strong> @ViewBag.Roles</p>
+    </div>
+    <p>Here you can issue and revoke certificates.</p>
+    <a href="/Home/Index" class="btn btn-primary">Back to Dashboard</a>
+</div>

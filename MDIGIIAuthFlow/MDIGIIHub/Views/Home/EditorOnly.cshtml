@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Editor Only";
+}
+
+<div class="container mt-4">
+    <h1>Editor Only Page</h1>
+    <div class="alert alert-warning">
+        <p>This page is only accessible to users with the Editor role.</p>
+        <p><strong>Your roles:</strong> @ViewBag.Roles</p>
+    </div>
+    <p>Here you can perform editorial tasks for the MDIGI-I Hub.</p>
+    <a href="/Home/Index" class="btn btn-primary">Back to Dashboard</a>
+</div>

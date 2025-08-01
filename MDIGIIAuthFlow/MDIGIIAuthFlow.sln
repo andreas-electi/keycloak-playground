@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDIGIIHub", "MDIGIIHub\MDIGIIHub.csproj", "{87FBC14C-5121-6DD6-034C-6D5C52A75900}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertificateService", "CertificateService\CertificateService.csproj", "{8849FDCF-97A6-FFB5-ECC2-90E9A9C1F7F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87FBC14C-5121-6DD6-034C-6D5C52A75900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87FBC14C-5121-6DD6-034C-6D5C52A75900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87FBC14C-5121-6DD6-034C-6D5C52A75900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87FBC14C-5121-6DD6-034C-6D5C52A75900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8849FDCF-97A6-FFB5-ECC2-90E9A9C1F7F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8849FDCF-97A6-FFB5-ECC2-90E9A9C1F7F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8849FDCF-97A6-FFB5-ECC2-90E9A9C1F7F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8849FDCF-97A6-FFB5-ECC2-90E9A9C1F7F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA980446-1A1C-46EF-B355-EFBF72968B35}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+{
+  "Version": 3,
+
+  "ListAllProjects": false,
+  "MultiProjectConfigurations": {
+    "All": {
+      "Projects": {
+        "CertificateService": {},
+        "MDIGIIHub": {}
+      }
+    },
+    "MDIGIIHub": {
+      "Projects": {
+        "MDIGIIHub": {}
+      }
+    },
+    "CertificateService": {
+      "Projects": {
+        "CertificateService": {}
+      }
+    }
+  }
+}

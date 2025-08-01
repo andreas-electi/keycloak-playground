@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Admin Only";
+}
+
+<div class="container mt-4">
+    <h1>Admin Only Page</h1>
+    <div class="alert alert-info">
+        <p>This page is only accessible to users with the Admin role.</p>
+        <p><strong>Your roles:</strong> @ViewBag.Roles</p>
+    </div>
+    <p>Here you can perform administrative tasks for the MDIGI-I Hub.</p>
+    <a href="/Home/Index" class="btn btn-primary">Back to Dashboard</a>
+</div>

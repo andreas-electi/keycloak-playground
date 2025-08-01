@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Admin & Issuer Access";
+}
+
+<div class="container mt-4">
+    <h1>Admin & Issuer Access Page</h1>
+    <div class="alert alert-info">
+        <p>This page is accessible to users with either Admin or Issuer role.</p>
+        <p><strong>Your roles:</strong> @ViewBag.Roles</p>
+    </div>
+    <p>Both admins and issuers can perform operations on this page.</p>
+    <a href="/Home/Index" class="btn btn-primary">Back to Dashboard</a>
+</div>

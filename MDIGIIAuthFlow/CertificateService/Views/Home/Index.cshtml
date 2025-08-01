@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Certificate Service Dashboard";
+}
+
+<div class="container mt-4">
+    <h1>Certificate Service Dashboard</h1>
+    
+    <h2>JWT Claims</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Claim Type</th>
+                <th>Claim Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var claim in ViewBag.Claims)
+            {
+                <tr>
+                    <td>@claim.Type</td>
+                    <td>@claim.Value</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h2>Certificate Service Navigation</h2>
+    <div class="row mt-3">
+        <div class="col">
+            <a href="/Home/IssuerOnly" class="btn btn-warning">Issuer Only Page</a>
+            <a href="/Home/AdminOnly" class="btn btn-warning">Admin Only Page</a>
+            <a href="/Home/AdminAndIssuer" class="btn btn-warning">Admin & Issuer Page</a>
+            <a href="https://localhost:7294/Home/Index" class="btn btn-info">Back to Hub</a>
+            <a href="/Account/Logout" class="btn btn-secondary">Logout</a>
+        </div>
+    </div>
+</div>
